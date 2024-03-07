@@ -25,5 +25,13 @@ jobs:
 
     - name: Run tests
       run: | 
-        python test.py  
+        python test.py
+
+    - name: Train model
+      run: |
+        python train.py
+
+    - name: Deploy model
+      run: |
+        python deploy.py
 
